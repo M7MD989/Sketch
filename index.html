@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./JS/main.js" defer></script>
+    <title>Sketch</title>
+</head>
+<body>
+    <div class="flexCont">
+        <div class="title"><h1>Sketch</h1></div>
+        <div class="error">
+            input must be btween 2 and 100
+        </div>
+        <div class="cont">
+            <div class="board"></div>
+            <div class="button">
+                <button class="B2 , black" onclick="changeColor('black')">Black</button>
+                <button class="B2 , white" onclick="changeColor('white')">Erase</button>
+                <button class="B2 , random" onclick="changeColor('random')">Random</button>
+            </div>
+            <div class="input">
+                <input 
+                type="number" 
+                value="16" 
+                placeholder="size of board"
+                onchange="changeBoardSize(this.value)"
+                />
+            </div>
+            <div class="button">
+                <button class="B2">set size</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
